@@ -9,3 +9,5 @@ clean up codebase
 add settings: sfx, music, quality, mute
 add music
 fix potential bugs
+
+post processing(I'll do it myself sakhte :/)
