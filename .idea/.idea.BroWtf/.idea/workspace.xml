@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d34189c-1549-4b66-9fb4-5500cc26fdb7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BroWtf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BroWtf/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31D5D65B-32EC-4832-92E1-3E8AE4100B93/ea/f18855ae/Color.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SceneChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/a3/741094dd/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/DebugCommand.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManagerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LostUIController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/brh.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BaseController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Util.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OwnedData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerTexture.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShopUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIFunctions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/LostUIController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BackgroundShifter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Customizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BetterEnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/EnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerTexture.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BackGroundColorChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/OwnedData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/StatsData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DifficultyChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SceneChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIFunctions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Util/DebugCommand.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Util/DebugController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Util/Util.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/EnemySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Util/GameManagerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShopUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GamePlay/BaseController.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1qmPhazfOArLfY6wx6dcC5KebdY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/games/KeepSafe/1.0\KeepSafe.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Arian\Desktop\games\KeepSafe\1.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d34189c-1549-4b66-9fb4-5500cc26fdb7" name="Default Changelist" comment="" />
+      <created>1617681935061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617681935061</updated>
+      <workItem from="1617681948003" duration="1508000" />
+      <workItem from="1617686488083" duration="5793000" />
+      <workItem from="1617713018584" duration="6535000" />
+      <workItem from="1617803944463" duration="133000" />
+      <workItem from="1617804108106" duration="9631000" />
+      <workItem from="1617824688128" duration="5125000" />
+      <workItem from="1617880391378" duration="3932000" />
+      <workItem from="1617911732455" duration="5389000" />
+      <workItem from="1617953264480" duration="6389000" />
+      <workItem from="1617965043928" duration="11882000" />
+      <workItem from="1617978773426" duration="4172000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

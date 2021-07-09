@@ -1,0 +1,11 @@
+fix performance
+fix background
+fix base being black
+add tutorial
+add creadits
+code refactoring
+remove unused files
+clean up codebase
+add settings: sfx, music, quality, mute
+add music
+fix potential bugs

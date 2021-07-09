@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Arian\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Arian\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_BroWtf.42841579.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Arian\Documents\GitHub\BroWtf" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.Player.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="GamePlay" t="Include">
+            <e p="BackGroundColorChanger.cs" t="Include" />
+            <e p="BaseController.cs" t="Include" />
+            <e p="BetterEnemyController.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="EnemySpawner.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerTexture.cs" t="Include" />
+          </e>
+          <e p="SaveSystem" t="Include">
+            <e p="OwnedData.cs" t="Include" />
+            <e p="SaveSystem.cs" t="Include" />
+            <e p="StatsData.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Customizer.cs" t="Include" />
+            <e p="DifficultyChanger.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
+            <e p="LostUIController.cs" t="Include" />
+            <e p="SceneChanger.cs" t="Include" />
+            <e p="ShopUI.cs" t="Include" />
+            <e p="UIFunctions.cs" t="Include" />
+          </e>
+          <e p="Util" t="Include">
+            <e p="DebugCommand.cs" t="Include" />
+            <e p="DebugController.cs" t="Include" />
+            <e p="GameManagerScript.cs" t="Include" />
+            <e p="Util.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="BroWtf.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
