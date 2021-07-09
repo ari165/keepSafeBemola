@@ -16,6 +16,7 @@ public class BaseController : MonoBehaviour
     private void Start()
     {
         // randomly change its color
+        // TODO: gives ugly colors
         GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
         if (healthBar == null)
             return;
@@ -33,7 +34,7 @@ public class BaseController : MonoBehaviour
 
         String colTag = collision.collider.tag;
         
-        if (colTag == "Enemy" || colTag == "BEnemy")
+        if (colTag == "Enemy")
         {
             // play hit sound
             hitSound.Play();
