@@ -8,6 +8,7 @@ public class GameManagerScript : MonoBehaviour
     {
         // v-sync 1:1
         QualitySettings.vSyncCount = 1;
+
     }
 
     // Update is called once per frame
