@@ -24,6 +24,8 @@ public class DebugController : MonoBehaviour
     public static DebugCommand RESET_STATS;
     public static DebugCommand UPDATE_UI;
     public static DebugCommand<int> ADD_COINS;
+    public static DebugCommand<int> ADD_SCORE_TO_LEADERBOARD;
+    public static DebugCommand RECONNECT;
 
     public List<object> commandList;
 
@@ -94,7 +96,22 @@ public class DebugController : MonoBehaviour
             SaveSystem.SaveStats(SaveSystem.LoadStats().coins + x, SaveSystem.LoadStats().highScore);
             Update_ui();
         });
-        
+
+        ADD_SCORE_TO_LEADERBOARD = new DebugCommand<int>("add_score_to_leaderboard", "sends the score to online leaderboard", "add_score", (x) =>
+        {
+            LeaderBoardController lbc = EventSystem.current.gameObject.GetComponent<LeaderBoardController>();
+            lbc.SubmitScore(x);
+            if (CheckScene("Lost"))
+            {
+                lbc.UpdateLeaderBoard();
+            }
+        });
+
+        RECONNECT = new DebugCommand("reconnect", "reconnects the leaderboard sdk", "reconnect", () =>
+        {
+            LeaderBoardController lbc = EventSystem.current.gameObject.GetComponent<LeaderBoardController>();
+            lbc.init_sdk();
+        });
 
         commandList = new List<object>
         {
@@ -107,7 +124,9 @@ public class DebugController : MonoBehaviour
             RESET_OWNED,
             RESET_STATS,
             UPDATE_UI,
-            ADD_COINS
+            ADD_COINS,
+            ADD_SCORE_TO_LEADERBOARD,
+            RECONNECT
         };
     }
 

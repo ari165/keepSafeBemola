@@ -2,6 +2,7 @@ using System;
 
 public class DebugCommandBase
 {
+    // base of a command
     private string _commandId;
     private string _commandDescription;
     private string _commandFormat;

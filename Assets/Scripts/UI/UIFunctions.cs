@@ -42,6 +42,12 @@ public class UIFunctions : MonoBehaviour
     {
         sceneChanger.LoadScene("Shop");
     }
+    
+    //TODO: Remove this
+    public void GoToTest()
+    {
+        sceneChanger.LoadScene("LeaderboardTestScene");
+    }
 
     public void SetDifficulty()
     {
