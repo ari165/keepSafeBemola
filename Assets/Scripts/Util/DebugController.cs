@@ -5,9 +5,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 /*
  * a very flexible command system based in a tutorial
+ * its only for testing and doesn't even work in the release mode
  */
 public class DebugController : MonoBehaviour
-{
+{ 
+    // only work when on development build (or editor) to save resources
+#if DEVELOPMENT_BUILD || DEBUG
+
     public bool showConsole;
     public bool showHelp;
     public GUIStyle consoleStyle;
@@ -28,7 +32,7 @@ public class DebugController : MonoBehaviour
     public static DebugCommand RECONNECT;
 
     public List<object> commandList;
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.BackQuote))
@@ -100,18 +104,14 @@ public class DebugController : MonoBehaviour
         ADD_SCORE_TO_LEADERBOARD = new DebugCommand<int>("add_score_to_leaderboard", "sends the score to online leaderboard", "add_score", (x) =>
         {
             LeaderBoardController lbc = EventSystem.current.gameObject.GetComponent<LeaderBoardController>();
-            lbc.SubmitScore(x);
+            lbc.SubmitScore(x, "cmd");
             if (CheckScene("Lost"))
             {
                 lbc.UpdateLeaderBoard();
             }
         });
 
-        RECONNECT = new DebugCommand("reconnect", "reconnects the leaderboard sdk", "reconnect", () =>
-        {
-            LeaderBoardController lbc = EventSystem.current.gameObject.GetComponent<LeaderBoardController>();
-            lbc.init_sdk();
-        });
+        RECONNECT = new DebugCommand("reconnect", "reconnects the leaderboard sdk", "reconnect", LeaderBoardController.Init_sdk);
 
         commandList = new List<object>
         {
@@ -216,4 +216,5 @@ public class DebugController : MonoBehaviour
             EventSystem.current.GetComponent<LostUIController>().UpdateUI();
         }
     }
+#endif
 }

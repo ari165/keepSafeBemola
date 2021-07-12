@@ -1,4 +1,6 @@
 using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 public static class Util
 {
@@ -16,6 +18,17 @@ public static class Util
         second.CopyTo(result, first.Length);
  
         return result;
+    }
+    public static Text AddTextToCanvas(string textString, GameObject canvasGameObject)
+    {
+        Text text = canvasGameObject.AddComponent<Text>();
+        text.text = textString;
+ 
+        Font ArialFont = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
+        text.font = ArialFont;
+        text.material = ArialFont.material;
+ 
+        return text;
     }
 
     public static String ConvertToPersian(int number)
