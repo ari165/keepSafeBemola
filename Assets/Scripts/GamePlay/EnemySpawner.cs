@@ -12,7 +12,6 @@ public class EnemySpawner : MonoBehaviour
     public float waitTimeOffset;
     
     public float t;
-    private float tm;
     private float tl;
     
     public float enemySpeed;
@@ -29,11 +28,11 @@ public class EnemySpawner : MonoBehaviour
         tl = PlayerPrefs.GetInt("difficulty") switch
         {
             // 1.08 impossible, 1.09 hard, 1.1 normal, 1.11 easy, 1.12 very easy
-            0 => 1.12f,
-            1 => 1.11f,
-            2 => 1.10f,
-            3 => 1.09f,
-            4 => 1.08f,
+            0 => 1.16f,
+            1 => 1.14f,
+            2 => 1.13f,
+            3 => 1.08f,
+            4 => 1.07f,
             _ => tl
         };
         
@@ -52,23 +51,25 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator spawner()
     {
-        tm = 0.1f;
+        t = 0.1f;
+        currentTime = waitTime;
         bm = 0.005f;
         while (true)
         {
-            t += tm /= tl;
+            if (t > 0.0001)
+                t /= tl;
             // increase enemy speed in each spawn cycle
             enemySpeed += bm /= 1.01f;
             
             // get the current wait time based on wait time and a small amount of randomization, the t variable is the value that gets
             // increased over time and makes spawning faster
-            currentTime = waitTime + Random.Range(-waitTimeOffset, waitTimeOffset) - t;
+            currentTime = (currentTime - t);
             if (currentTime < 0)
             {
                 currentTime = 0.01f;
             }
             // wait until the next spawn cycle
-            yield return new WaitForSeconds(currentTime);
+            yield return new WaitForSeconds(currentTime + Random.Range(-waitTimeOffset, waitTimeOffset));
             
             // get the spawn location
             float angle = Random.value * Mathf.PI * 2;
@@ -88,11 +89,13 @@ public class EnemySpawner : MonoBehaviour
         {
             GameObject go = Instantiate(ObjectsToSpawn[0], pos, Quaternion.identity);
             go.GetComponent<EnemyController>().speed = speed;
+            //go.GetComponent<EnemyController>().enabled = false;
         }
         else
         {
             GameObject go = Instantiate(ObjectsToSpawn[1], pos, Quaternion.identity);
             go.GetComponent<EnemyController>().speed = speed * 1.3f;
+            //go.GetComponent<EnemyController>().enabled = false;
 
         }
     }

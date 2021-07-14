@@ -10,6 +10,7 @@ public class LeaderBoardController : MonoBehaviour
     public int ID;
     public Text[] score_texts;
     public Text player_stats;
+    public static bool init;
     
     private string player_name;
     
@@ -18,21 +19,9 @@ public class LeaderBoardController : MonoBehaviour
         player_name = PlayerPrefs.GetString("name");
 
         Init_sdk();
-        //UpdateLeaderBoard();
-        if (player_name != "" && player_name != " ")
-        {
-            SubmitScore();
-            LootLockerSDKManager.GetByListOfMembers(new []{"test"}, ID, (response) =>
-            {
-                if (response.success)
-                {
-                    LootLockerLeaderboardMember score = response.members[0];
-                    player_stats.text = (score.rank + ". " + score.member_id + "        " + score.score);
-                    Debug.Log(response.members[0].rank);
-                }
-            });
-        }
-
+        UpdateLeaderBoard();
+        CheckPlayerStats();
+        SubmitScore(100, "test");
     }
 
     public static void Init_sdk()
@@ -42,11 +31,26 @@ public class LeaderBoardController : MonoBehaviour
             if (response.success)
             {
                 Debug.Log("connected");
+                init = true;
             }
             else
             {
                 Debug.Log("failed to connect");
             }
+        });
+    }
+
+    public void CheckPlayerStats()
+    {
+        player_name = PlayerPrefs.GetString("name");
+        if (player_name == "" || player_name == " ") return;
+        SubmitScore();
+        LootLockerSDKManager.GetByListOfMembers(new []{player_name}, ID, (response) =>
+        {
+            if (!response.success) return;
+            LootLockerLeaderboardMember score = response.members[0];
+            player_stats.text = (score.rank + ". " + score.member_id + "        " + score.score);
+            Debug.Log(response.members[0].rank);
         });
     }
     
@@ -69,32 +73,24 @@ public class LeaderBoardController : MonoBehaviour
     public void SubmitScore()
     {
         StatsData data = SaveSystem.LoadStats();
-        LootLockerSDKManager.SubmitScore(player_name, data.highScore, ID, (response) =>
-        {
-            if (response.success)
-            {
-                Debug.Log("connected");
-                UpdateLeaderBoard();
-            }
-            else
-            {
-                Debug.Log("failed to connect");
-            }
-        });
+        SubmitScore(data.highScore, PlayerPrefs.GetString("name"));
     }
 
     public void UpdateLeaderBoard()
     {
+        if (!init)
+            Init_sdk();
         LootLockerSDKManager.GetScoreList(ID, score_texts.Length, (response) =>
         {
-            Debug.Log("?");
+
             if (response.success)
             {
                 LootLockerLeaderboardMember[] scores = response.items;
 
                 for (int i = 0; i < scores.Length; i++)
                 {
-                    score_texts[i].text = (scores[i].rank + ". " + scores[i].member_id + "        " + scores[i].score);
+                    Debug.Log(scores[i].rank + ". " + scores[i].member_id + "        " + scores[i].score);
+                    score_texts[i].text = " " + scores[i].rank + ". " + scores[i].member_id + "        " + scores[i].score;
                 }
                 
             }
@@ -103,5 +99,13 @@ public class LeaderBoardController : MonoBehaviour
                 Debug.Log("something went wrong");
             }
         });
+    }
+
+    public void SaveName()
+    {
+        if (MemberID.text == "") return;
+        PlayerPrefs.SetString("name", MemberID.text);
+        print(PlayerPrefs.GetString("name"));
+        SubmitScore();
     }
 }
