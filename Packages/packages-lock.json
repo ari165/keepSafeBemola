@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "com.lootlocker.lootlockersdk": {
-      "version": "file:C:/Users/Arian/Desktop/unity-sdk-master/unity-sdk-master",
+      "version": "https://github.com/LootLocker/unity-sdk.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "2.0.0"
-      }
+      },
+      "hash": "a9d12d4d3d5b7b0fe3e20debdb2b131eb6af424c"
     },
     "com.unity.2d.animation": {
       "version": "5.0.4",

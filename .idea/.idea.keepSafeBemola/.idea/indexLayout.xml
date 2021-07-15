@@ -3,6 +3,7 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
+      <Path>Library/PackageCache/com.lootlocker.lootlockersdk@a9d12d4d3d</Path>
       <Path>Library/PackageCache/com.unity.2d.animation@5.0.4</Path>
       <Path>Library/PackageCache/com.unity.2d.common@4.0.3</Path>
       <Path>Library/PackageCache/com.unity.2d.path@4.0.1</Path>
@@ -21,7 +22,6 @@
       <Path>Library/PackageCache/com.unity.timeline@1.4.6</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
-      <Path>../../../unity-sdk-master/unity-sdk-master</Path>
     </explicitIncludes>
     <explicitExcludes>
       <Path>.git</Path>
