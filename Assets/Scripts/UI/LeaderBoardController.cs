@@ -21,7 +21,6 @@ public class LeaderBoardController : MonoBehaviour
         Init_sdk();
         UpdateLeaderBoard();
         CheckPlayerStats();
-        SubmitScore(100, "test");
     }
 
     public static void Init_sdk()
@@ -96,7 +95,7 @@ public class LeaderBoardController : MonoBehaviour
             }
             else
             {
-                Debug.Log("something went wrong");
+                Debug.Log("something went wrong" + response.Error);
             }
         });
     }
