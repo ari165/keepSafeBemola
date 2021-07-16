@@ -25,6 +25,19 @@ public class UIFunctions : MonoBehaviour
         sceneChanger.LoadScene("StartMenu");
         Time.timeScale = 1.0f;
     }
+    public void GoToTutorialP1() {
+        sceneChanger.LoadScene("tutorial p1");
+        Time.timeScale = 1.0f;
+    }
+    public void GoToTutorialP2() {
+        sceneChanger.LoadScene("tutorial p2");
+        Time.timeScale = 1.0f;
+    }
+    public void GoToTutorialP3() {
+        sceneChanger.LoadScene("tutorial p3");
+        Time.timeScale = 1.0f;
+    }
+
     
     public void Restart()
     {
@@ -36,6 +49,7 @@ public class UIFunctions : MonoBehaviour
     public void GoToAbout()
     {
         sceneChanger.LoadScene("about");
+        Time.timeScale = 1.0f;
     }
     
     public void Exit()
