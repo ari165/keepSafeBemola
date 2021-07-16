@@ -656,7 +656,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'have some exciting ideas ?
 
@@ -1456,7 +1456,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: the game is confiusing?
 --- !u!222 &1297073752
@@ -1683,9 +1683,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1449817162}
-        m_TargetAssemblyTypeName: scenecontroller, Assembly-CSharp
-        m_MethodName: to_about
+      - m_Target: {fileID: 372004507}
+        m_TargetAssemblyTypeName: UIFunctions, Assembly-CSharp
+        m_MethodName: GoToAbout
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

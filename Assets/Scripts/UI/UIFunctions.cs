@@ -32,6 +32,11 @@ public class UIFunctions : MonoBehaviour
         Time.timeScale = 1.0f;
         
     }
+
+    public void GoToAbout()
+    {
+        sceneChanger.LoadScene("about");
+    }
     
     public void Exit()
     {
@@ -41,12 +46,6 @@ public class UIFunctions : MonoBehaviour
     public void GoToShop()
     {
         sceneChanger.LoadScene("Shop");
-    }
-    
-    //TODO: Remove this
-    public void GoToTest()
-    {
-        sceneChanger.LoadScene("LeaderboardTestScene");
     }
 
     public void SetDifficulty()
